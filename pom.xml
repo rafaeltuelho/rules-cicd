@@ -1,32 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
-
-  <groupId>com.redhat.demos</groupId>
-  <artifactId>kie-rules-templates</artifactId>
+  <groupId>com.myspace</groupId>
+  <artifactId>rules-cicd</artifactId>
   <version>1.0.0-SNAPSHOT</version>
-
+  <name>rules-cicd</name>
+  <description></description>
   <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
-    <!--kieVersion>7.39.0.Final-redhat-00007</kieVersion -->
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
-  <!-- ENABLE THIS SECTION TO DEPLOY THE ARTIFACT TO YOUR MAVEN REPO
-  <distributionManagement>
-    <repository>
-      <id>nexus-ocp</id>
-      <url>${env.NEXUS_REPO}/repository/maven-releases/</url>
-      <layout>default</layout>
-    </repository>
-    <snapshotRepository>
-      <id>nexus-ocp</id>
-      <url>${env.NEXUS_REPO}/repository/maven-snapshots/</url>
-      <layout>default</layout>
-    </snapshotRepository>
-  </distributionManagement>
-  -->
   <dependencies>
     <dependency>
       <groupId>org.kie</groupId>
@@ -121,7 +106,7 @@
       <artifactId>drools-decisiontables</artifactId>
       <version>7.44.0.Final-redhat-00006</version>
       <scope>test</scope>
-    </dependency>    
+    </dependency>
     <dependency>
       <groupId>org.kie</groupId>
       <artifactId>kie-dmn-feel</artifactId>
@@ -135,7 +120,6 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-
   <build>
     <plugins>
       <plugin>
@@ -143,7 +127,7 @@
         <artifactId>kie-maven-plugin</artifactId>
         <version>7.44.0.Final-redhat-00006</version>
         <extensions>true</extensions>
-      </plugin>      
+      </plugin>
     </plugins>
   </build>
 </project>
