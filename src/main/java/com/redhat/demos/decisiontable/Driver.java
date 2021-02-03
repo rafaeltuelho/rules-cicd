@@ -21,40 +21,60 @@ package com.redhat.demos.decisiontable;
  */
 public class Driver {
 
-    private String name = "Mr Joe Blogs";
-    private Integer age = new Integer(30);
-    private Integer priorClaims = new Integer(0);
-    private String  locationRiskProfile = "LOW";
+	private String name = "Mr Joe Blogs";
+	private Integer age = new Integer(30);
+	private Integer priorClaims = new Integer(0);
+	private String locationRiskProfile = "LOW";
 
-    public Integer getAge() {
-        return age;
-    }
-    public void setAge(Integer age) {
-        this.age = age;
-    }
-    public String getLocationRiskProfile() {
-        return locationRiskProfile;
-    }
-    public void setLocationRiskProfile(String locationRiskProfile) {
-        this.locationRiskProfile = locationRiskProfile;
-    }
-    public String getName() {
-        return name;
-    }
-    public void setName(String name) {
-        this.name = name;
-    }
-    public Integer getPriorClaims() {
-        return priorClaims;
-    }
-    public void setPriorClaims(Integer priorClaims) {
-        this.priorClaims = priorClaims;
-    }
+	private java.lang.String test;
+
+	public Integer getAge() {
+		return age;
+	}
+	public void setAge(Integer age) {
+		this.age = age;
+	}
+	public String getLocationRiskProfile() {
+		return locationRiskProfile;
+	}
+	public void setLocationRiskProfile(String locationRiskProfile) {
+		this.locationRiskProfile = locationRiskProfile;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public Integer getPriorClaims() {
+		return priorClaims;
+	}
+	public void setPriorClaims(Integer priorClaims) {
+		this.priorClaims = priorClaims;
+	}
 
 	@Override
 	public String toString() {
-		return "Driver [age=" + age + ", locationRiskProfile=" + locationRiskProfile + ", name=" + name
-				+ ", priorClaims=" + priorClaims + "]";
-    }
-    
+		return "Driver [age=" + age + ", locationRiskProfile="
+				+ locationRiskProfile + ", name=" + name + ", priorClaims="
+				+ priorClaims + "]";
+	}
+	public java.lang.String getTest() {
+		return this.test;
+	}
+	public void setTest(java.lang.String test) {
+		this.test = test;
+	}
+	public Driver() {
+	}
+	public Driver(java.lang.String name, java.lang.Integer age,
+			java.lang.Integer priorClaims,
+			java.lang.String locationRiskProfile, java.lang.String test) {
+		this.name = name;
+		this.age = age;
+		this.priorClaims = priorClaims;
+		this.locationRiskProfile = locationRiskProfile;
+		this.test = test;
+	}
+
 }
