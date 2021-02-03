@@ -28,6 +28,8 @@ public class Driver {
 
 	private java.lang.String test;
 
+	private java.lang.String newField;
+
 	public Integer getAge() {
 		return age;
 	}
@@ -67,14 +69,22 @@ public class Driver {
 	}
 	public Driver() {
 	}
+	public java.lang.String getNewField() {
+		return this.newField;
+	}
+	public void setNewField(java.lang.String newField) {
+		this.newField = newField;
+	}
 	public Driver(java.lang.String name, java.lang.Integer age,
 			java.lang.Integer priorClaims,
-			java.lang.String locationRiskProfile, java.lang.String test) {
+			java.lang.String locationRiskProfile, java.lang.String test,
+			java.lang.String newField) {
 		this.name = name;
 		this.age = age;
 		this.priorClaims = priorClaims;
 		this.locationRiskProfile = locationRiskProfile;
 		this.test = test;
+		this.newField = newField;
 	}
 
 }
