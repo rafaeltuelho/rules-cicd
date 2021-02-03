@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.myspace</groupId>
   <artifactId>rules-cicd</artifactId>
-  <version>1.0.0-SNAPSHOT</version>
+  <version>1.0.0-Final</version>
   <name>rules-cicd</name>
   <description></description>
   <properties>
@@ -12,20 +12,20 @@
     <maven.compiler.source>1.8</maven.compiler.source>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
-  <!-- ENABLE THIS SECTION TO DEPLOY THE ARTIFACT TO YOUR MAVEN REPO
+  <!-- ENABLE THIS SECTION TO DEPLOY THE ARTIFACT TO YOUR MAVEN REPO -->
   <distributionManagement>
     <repository>
       <id>nexus-ocp</id>
-      <url>${env.NEXUS_REPO}/repository/maven-releases/</url>
+      <url>http://nexus3-gck-tools.apps.cluster-wunion-1c90.wunion-1c90.example.opentlc.com/repository/maven-releases/</url>
       <layout>default</layout>
     </repository>
     <snapshotRepository>
       <id>nexus-ocp</id>
-      <url>${env.NEXUS_REPO}/repository/maven-snapshots/</url>
+      <url>http://nexus3-gck-tools.apps.cluster-wunion-1c90.wunion-1c90.example.opentlc.com/repository/maven-snapshots/</url>
       <layout>default</layout>
     </snapshotRepository>
   </distributionManagement>
-  -->  
+  <!-- -->  
   <dependencies>
     <dependency>
       <groupId>org.kie</groupId>
