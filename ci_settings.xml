@@ -19,7 +19,7 @@
       <repositories>
         <repository>
           <id>nexus-repository</id>
-          <url>${env.NEXUS_REPO}/repository/maven-all-public/</url>
+          <url>http://nexus-cicd-opentlc.apps.cluster-arrow-3f39.arrow-3f39.example.opentlc.com/repository/maven-all-public/</url>
           <releases>
             <enabled>true</enabled>
           </releases>
@@ -30,7 +30,7 @@
         <repository>
             <id>maven-releases</id>
             <name>maven-releases</name>
-            <url>${env.NEXUS_REPO}/repository/maven-releases/</url>
+            <url>http://nexus-cicd-opentlc.apps.cluster-arrow-3f39.arrow-3f39.example.opentlc.com/repository/maven-releases/</url>
             <layout>default</layout>
             <releases>
               <enabled>true</enabled>
@@ -44,7 +44,7 @@
         <repository>
             <id>maven-snapshots</id>
             <name>maven-snapshots</name>
-            <url>${env.NEXUS_REPO}/repository/maven-snapshots/</url>
+            <url>http://nexus-cicd-opentlc.apps.cluster-arrow-3f39.arrow-3f39.example.opentlc.com/repository/maven-snapshots/</url>
             <layout>default</layout>
             <releases>
               <enabled>true</enabled>

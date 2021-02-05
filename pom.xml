@@ -16,12 +16,12 @@
   <distributionManagement>
     <repository>
       <id>nexus-ocp</id>
-      <url>http://nexus3-gck-tools.apps.cluster-wunion-1c90.wunion-1c90.example.opentlc.com/repository/maven-releases/</url>
+      <url>http://nexus-cicd-opentlc.apps.cluster-arrow-3f39.arrow-3f39.example.opentlc.com/repository/maven-releases/</url>
       <layout>default</layout>
     </repository>
     <snapshotRepository>
       <id>nexus-ocp</id>
-      <url>http://nexus3-gck-tools.apps.cluster-wunion-1c90.wunion-1c90.example.opentlc.com/repository/maven-snapshots/</url>
+      <url>http://nexus-cicd-opentlc.apps.cluster-arrow-3f39.arrow-3f39.example.opentlc.com/repository/maven-snapshots/</url>
       <layout>default</layout>
     </snapshotRepository>
   </distributionManagement>
