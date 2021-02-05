@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.myspace</groupId>
   <artifactId>rules-cicd</artifactId>
-  <version>2.1.0-Final</version>
+  <version>2.2.0-Final</version>
   <name>rules-cicd</name>
   <description></description>
   <properties>
