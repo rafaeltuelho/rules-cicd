@@ -2,7 +2,7 @@ apiVersion: app.kiegroup.org/v2
 kind: KieApp
 metadata:
   name: '{{KIE_APP_NAME}}-ks'
-  namespace: {{NAMESPACE}}
+  # namespace: {{NAMESPACE}}
 spec:
   commonConfig:
     adminPassword: dmAdmin
